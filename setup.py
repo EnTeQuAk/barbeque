@@ -12,7 +12,7 @@ def read(*parts):
 
 
 tests_require = [
-    'coverage',
+    'coverage>=4.0',
     'mock',
     'openpyxl',
     'psutil',

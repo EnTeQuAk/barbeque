@@ -50,7 +50,7 @@ class TestLoginRequiredMixin:
         assert response.status_code == 302
         assert response['Location'] == '/login/?next=/protected/'
 
-        assert info_func.assert_called_once()
+        assert info_func.call_count == 1
 
     def test_logged_in(self, rf, settings):
         settings.LOGIN_URL = '/login/'
