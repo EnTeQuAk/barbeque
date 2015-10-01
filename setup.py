@@ -18,6 +18,7 @@ tests_require = [
     'psutil',
     'pytest',
     'pytest-cov',
+    'pytest-cache>=1.0',
     'pytest-pep8',
     'pytest-flakes',
     'pytest-django',
